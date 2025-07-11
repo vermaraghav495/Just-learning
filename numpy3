@@ -1,0 +1,18 @@
+import numpy as np
+
+foo=np.array([[2,2],[2,2]])
+bar=np.array([[2,2],[2,2]])
+
+#element wise addition of arrays
+data=foo+bar
+
+#matrix wise multiplication
+result = foo@bar
+print(result)
+#adds foo and an array full of 5
+sum=foo + np.full((2,2),5)
+print(sum)
+print(foo @ sum)
+
+#adds 5 to all elements of the array and wroks for all math functions
+print(foo + 5 )
